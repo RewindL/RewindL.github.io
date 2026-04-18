@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently an algorithm engineer at Alibaba Cloud Intelligence, specializing in reasoning and efficient inference of multimodal language models (MLLMs). I received my Master's and Bachelor's degrees in School of Computer Science and Engineering, Sun Yat-sen University (SYSU). My current research interests are LLM reasoning, Reinforcement Learning and Multi-Agent Systems.
+I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www.alibabacloud.com/), specializing in reasoning and efficient inference of multimodal language models (MLLMs). I received my Master's and Bachelor's degrees in School of Computer Science and Engineering, Sun Yat-sen University (SYSU). My current research interests are LLM reasoning, Reinforcement Learning and Multi-Agent Systems.
 
 🔥 News 
 ------
