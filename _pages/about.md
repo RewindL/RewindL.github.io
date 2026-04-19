@@ -23,17 +23,17 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
 
 📄 Publications 
 ------
-MemTR: Enhancing Tool-Calling Reliability via Uncertainty-Triggered FFN-Space Retracing
-\emph{Duan, H.}, \emph{Jiang, L.}, \emph{Zhang, M.}, \emph{Zhu, X.}, \emph{Bu, T.}, \emph{\underline{\textbf{Jiang, H.}}}, \emph{Wei, X.}, \emph{Hu, L.}
+**MemTR: Enhancing Tool-Calling Reliability via Uncertainty-Triggered FFN-Space Retracing** \
+_Duan, H., Jiang, L., Zhang, M., Zhu, X., Bu, T., **Jiang, H.**, Wei, X., Hu, L._
 
-Self-supervised Texture Filtering
-\emph{\underline{\textbf{Jiang, H.}}}, \emph{Zheng, R.}, \emph{Nie, Y.}, \emph{Xiao, C.}, \emph{Zheng, W.}, \emph{Zhang, Q.}
+**Self-supervised Texture Filtering** \
+_**Jiang, H.**, Zheng, R., Nie, Y., Xiao, C., Zheng, W., Zhang, Q._
 
-Learning to Remove Shadows from a Single Image
-\emph{\underline{\textbf{Jiang, H.}}}, \emph{Zhang, Q.}, \emph{Nie, Y.}, \emph{Zhu, L}, \emph{Zheng, W.}
+**Learning to Remove Shadows from a Single Image** \
+_**Jiang, H.**, Zhang, Q., Nie, Y., Zhu, L, Zheng, W._
 
-Pyramid Texture Filtering
-\emph{Zhang, Q.}, \emph{\underline{\textbf{Jiang, H.}}}, \emph{Nie, Y.}, \emph{Zheng, W.}
+**Pyramid Texture Filtering** \
+_Zhang, Q., **Jiang, H.**, Nie, Y., Zheng, W._
 
-Learning Multi-Scale Deep Image Prior for High-Quality Unsupervised Image Denoising
-\emph{\underline{\textbf{Jiang, H.}}}, \emph{Zhang, Q.}, \emph{Nie, Y.}, \emph{Zhu, L}, \emph{Zheng, W.}
+**Learning Multi-Scale Deep Image Prior for High-Quality Unsupervised Image Denoising** \
+_**Jiang, H.**, Zhang, Q., Nie, Y., Zhu, L, Zheng, W._
