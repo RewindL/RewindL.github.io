@@ -38,7 +38,7 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   <div class="pub-right">
     <strong >MemTR: Enhancing Tool-Calling Reliability via Uncertainty-Triggered FFN-Space Retracing</strong><br />
     <em style="font-size: 0.9em;">Duan, H., Jiang, L., Zhang, M., Zhu, X., Bu, T., <strong>Jiang, H.</strong>, Wei, X., Hu, L.</em><br />
-    <strong style="font-size: 0.90em; color: #FF6670;">ACL 2026 Findings</strong><br />
+    <strong style="font-size: 0.90em; color: #4C1C62;">ACL 2026 Findings</strong><br />
     <a href="https://rewindl.github.io/">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
   </div>
 </div>
@@ -50,7 +50,7 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   <div class="pub-right">
     <strong>D-CORE: Incentivizing Task Decomposition in Large Reasoning Models for Complex Tool Use</strong><br />
     <em style="font-size: 0.9em;">Xu, B., Wu, S., <strong>Jiang, H.</strong>, Liu, K., Chen, X., Hu, L, Yang, B.</em><br />
-    <strong style="font-size: 0.90em; color: #FF6670;">Arxiv Preprint</strong><br />
+    <strong style="font-size: 0.90em; color: #4C1C62;">Arxiv Preprint</strong><br />
     <a href="https://rewindl.github.io/">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
   </div>
 </div>
@@ -62,8 +62,8 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   <div class="pub-right">
     <strong>Self-supervised Texture Filtering</strong><br />
     <em style="font-size: 0.9em;"><strong>Jiang, H.</strong>, Zheng, R., Nie, Y., Xiao, C., Zheng, W., Zhang, Q.</em><br />
-    <strong style="font-size: 0.90em; color: #FF6670;">ACM Transactions on Graphics</strong><br />
-    <span style="font-size: 0.90em; color: #FF6670;">(Proceedings of SIGGRAPH Asia 2025)</span> <br />
+    <strong style="font-size: 0.90em; color: #4C1C62;">ACM Transactions on Graphics</strong><br />
+    <span style="font-size: 0.90em; color: #4C1C62;">(Proceedings of SIGGRAPH Asia 2025)</span> <br />
     <a href="https://dl.acm.org/doi/10.1145/3744899">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
   </div>
 </div>
@@ -75,7 +75,7 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   <div class="pub-right">
     <strong>Learning to Remove Shadows from a Single Image</strong><br />
     <em style="font-size: 0.9em;"><strong>Jiang, H.</strong>, Zhang, Q., Nie, Y., Zhu, L, Zheng, W.</em><br />
-    <strong style="font-size: 0.90em; color: #FF6670;">International Journal of Computer Vision</strong><br />
+    <strong style="font-size: 0.90em; color: #4C1C62;">International Journal of Computer Vision</strong><br />
     <a href="https://dl.acm.org/doi/abs/10.1007/s11263-023-01823-9">Paper</a> | <a href="https://github.com/RewindL/Self-ShadowGAN">Code</a>
   </div>
 </div>
@@ -87,8 +87,8 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   <div class="pub-right">
     <strong>Pyramid Texture Filtering</strong><br />
     <em style="font-size: 0.9em;">Zhang, Q., <strong>Jiang, H.</strong>, Nie, Y., Zheng, W.</em><br />
-    <strong style="font-size: 0.90em; color: #FF6670;">ACM Transactions on Graphics</strong><br />
-    <span style="font-size: 0.90em; color: #FF6670;">(Proceedings of SIGGRAPH 2023)</span><br />
+    <strong style="font-size: 0.90em; color: #4C1C62;">ACM Transactions on Graphics</strong><br />
+    <span style="font-size: 0.90em; color: #4C1C62;">(Proceedings of SIGGRAPH 2023)</span><br />
     <a href="https://dl.acm.org/doi/10.1145/3592120">Paper</a> | <a href="https://rewindl.github.io/pyramid_texture_filtering/">Project</a> | <a href="https://github.com/RewindL/pyramid_texture_filtering">Code</a>
   </div>
 </div>
@@ -100,7 +100,7 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   <div class="pub-right">
     <strong>Learning Multi-Scale Deep Image Prior for High-Quality Unsupervised Image Denoising</strong><br />
     <em style="font-size: 0.9em;"><strong>Jiang, H.</strong>, Zhang, Q., Nie, Y., Zhu, L, Zheng, W.</em><br />
-    <strong style="font-size: 0.90em; color: #FF6670;">Computer Graphics Forum</strong><br />
+    <strong style="font-size: 0.90em; color: #4C1C62;">Computer Graphics Forum</strong><br />
     <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14680">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
   </div>
 </div>
