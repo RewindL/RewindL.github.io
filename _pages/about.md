@@ -31,6 +31,8 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
 .pub-right { flex: 1; }
 </style>
 
+<!-- dark purple: 4C1C62 -->
+
 <div class="pub-row">
   <div class="pub-left">
     <img src="../images/overview_memtr.png" alt="MemTR">
@@ -45,7 +47,7 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
 
 <div class="pub-row">
   <div class="pub-left">
-    <img src="../images/overview_dcore.png" alt="MemTR">
+    <img src="../images/overview_dcore_2.png" alt="MemTR">
   </div>
   <div class="pub-right">
     <strong>D-CORE: Incentivizing Task Decomposition in Large Reasoning Models for Complex Tool Use</strong><br />
