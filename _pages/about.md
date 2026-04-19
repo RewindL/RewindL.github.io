@@ -72,7 +72,7 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
 
 <div class="pub-row">
   <div class="pub-left">
-    <img src="../images/overview_self_shadowgan_2.png" alt="Learning to Remove Shadows">
+    <img src="../images/overview_self_shadowgan_3.png" alt="Learning to Remove Shadows">
   </div>
   <div class="pub-right">
     <strong>Learning to Remove Shadows from a Single Image</strong><br />
