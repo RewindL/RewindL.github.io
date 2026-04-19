@@ -21,29 +21,84 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
 - [2023.03] One paper accepted by Computer Graphics Forum
 
 
-📄 Publications 
+📄 Publications
 ------
-**MemTR: Enhancing Tool-Calling Reliability via Uncertainty-Triggered FFN-Space Retracing** \
-_Duan, H., Jiang, L., Zhang, M., Zhu, X., Bu, T., **Jiang, H.**, Wei, X., Hu, L._ \
-ACL 2026 Findings \
-[Paper](https://rewindl.github.io/), [Code](https://rewindl.github.io/)
 
+<style>
+.pub-row { display: flex; align-items: flex-start; margin-bottom: 20px; }
+.pub-left { flex: 0 0 33%; padding-right: 15px; }
+.pub-left img { width: 100%; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+.pub-right { flex: 1; }
+</style>
 
-**Self-supervised Texture Filtering** \
-_**Jiang, H.**, Zheng, R., Nie, Y., Xiao, C., Zheng, W., Zhang, Q._ \
-ACM Transactions on Graphics (Proceedings of SIGGRAPH Asia 2025) \
-[Paper](https://dl.acm.org/doi/10.1145/3744899), [Code](https://rewindl.github.io/)
+<div class="pub-row">
+  <div class="pub-left">
+    <img src="../images/overview_memtr.png" alt="MemTR">
+  </div>
+  <div class="pub-right">
+    <strong>MemTR: Enhancing Tool-Calling Reliability via Uncertainty-Triggered FFN-Space Retracing</strong><br />
+    <em>Duan, H., Jiang, L., Zhang, M., Zhu, X., Bu, T., <strong>Jiang, H.</strong>, Wei, X., Hu, L.</em><br />
+    ACL 2026 Findings<br />
+    <a href="https://rewindl.github.io/">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
+  </div>
+</div>
 
-**Learning to Remove Shadows from a Single Image** \
-_**Jiang, H.**, Zhang, Q., Nie, Y., Zhu, L, Zheng, W._ \
-International Journal of Computer Vision \
-[Paper](https://dl.acm.org/doi/abs/10.1007/s11263-023-01823-9), [Code](https://github.com/RewindL/Self-ShadowGAN)
+<div class="pub-row">
+  <div class="pub-left">
+    <img src="../images/overview_dcore.png" alt="MemTR">
+  </div>
+  <div class="pub-right">
+    <strong>D-CORE: Incentivizing Task Decomposition in Large Reasoning Models for Complex Tool Use</strong><br />
+    <em>Xu, B., Wu, S., Jiang, H., Liu, K., Chen, X., Hu, L, Yang, B.</em><br />
+    Arxiv Preprint<br />
+    <a href="https://rewindl.github.io/">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
+  </div>
+</div>
 
-**Pyramid Texture Filtering** \
-_Zhang, Q., **Jiang, H.**, Nie, Y., Zheng, W._ \
-ACM Transactions on Graphics (Proceedings of SIGGRAPH 2023) \
-[Paper](https://dl.acm.org/doi/10.1145/3592120), [Project](https://rewindl.github.io/pyramid_texture_filtering/), [Code](https://github.com/RewindL/pyramid_texture_filtering)
+<div class="pub-row">
+  <div class="pub-left">
+    <img src="../images/overview_self_supervised.png" alt="Self-supervised Texture Filtering">
+  </div>
+  <div class="pub-right">
+    <strong>Self-supervised Texture Filtering</strong><br />
+    <em><strong>Jiang, H.</strong>, Zheng, R., Nie, Y., Xiao, C., Zheng, W., Zhang, Q.</em><br />
+    ACM Transactions on Graphics (Proceedings of SIGGRAPH Asia 2025)<br />
+    <a href="https://dl.acm.org/doi/10.1145/3744899">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
+  </div>
+</div>
 
-**Learning Multi-Scale Deep Image Prior for High-Quality Unsupervised Image Denoising** \
-_**Jiang, H.**, Zhang, Q., Nie, Y., Zhu, L, Zheng, W._ \
-[Paper](https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14680), [Code](https://rewindl.github.io/)
+<div class="pub-row">
+  <div class="pub-left">
+    <img src="../images/overview_self_shadowgan_2.png" alt="Learning to Remove Shadows">
+  </div>
+  <div class="pub-right">
+    <strong>Learning to Remove Shadows from a Single Image</strong><br />
+    <em><strong>Jiang, H.</strong>, Zhang, Q., Nie, Y., Zhu, L, Zheng, W.</em><br />
+    International Journal of Computer Vision<br />
+    <a href="https://dl.acm.org/doi/abs/10.1007/s11263-023-01823-9">Paper</a> | <a href="https://github.com/RewindL/Self-ShadowGAN">Code</a>
+  </div>
+</div>
+
+<div class="pub-row">
+  <div class="pub-left">
+    <img src="../images/overview_ptf.png" alt="Pyramid Texture Filtering">
+  </div>
+  <div class="pub-right">
+    <strong>Pyramid Texture Filtering</strong><br />
+    <em>Zhang, Q., <strong>Jiang, H.</strong>, Nie, Y., Zheng, W.</em><br />
+    ACM Transactions on Graphics (Proceedings of SIGGRAPH 2023)<br />
+    <a href="https://dl.acm.org/doi/10.1145/3592120">Paper</a> | <a href="https://rewindl.github.io/pyramid_texture_filtering/">Project</a> | <a href="https://github.com/RewindL/pyramid_texture_filtering">Code</a>
+  </div>
+</div>
+
+<div class="pub-row">
+  <div class="pub-left">
+    <img src="../images/overview_double_dip.png" alt="Multi-Scale Deep Image Prior">
+  </div>
+  <div class="pub-right">
+    <strong>Learning Multi-Scale Deep Image Prior for High-Quality Unsupervised Image Denoising</strong><br />
+    <em><strong>Jiang, H.</strong>, Zhang, Q., Nie, Y., Zhu, L, Zheng, W.</em><br />
+    Computer Graphics Forum<br />
+    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14680">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
+  </div>
+</div>
