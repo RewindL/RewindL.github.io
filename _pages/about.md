@@ -88,7 +88,7 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   </div>
   <div class="pub-right">
     <strong>Pyramid Texture Filtering</strong><br />
-    <em style="font-size: 0.9em;">Zhang, Q., <strong>Jiang, H.</strong>, Nie, Y., Zheng, W.</em><br />
+    <em style="font-size: 0.9em;">Zhang, Q., <strong>#Jiang, H.</strong>, Nie, Y., Zheng, W. (# First Student Author)</em><br />
     <span style="font-size: 0.90em; color: #4C1C62;">ACM Transactions on Graphics</span><br />
     <span style="font-size: 0.90em; color: #4C1C62;">(Proceedings of SIGGRAPH 2023)</span><br />
     <a href="https://dl.acm.org/doi/10.1145/3592120">Paper</a> | <a href="https://rewindl.github.io/pyramid_texture_filtering/">Project</a> | <a href="https://github.com/RewindL/pyramid_texture_filtering">Code</a>
