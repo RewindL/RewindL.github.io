@@ -11,6 +11,7 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
 
 🔥 News
 ------
+- [2026.05] 🎉 One paper submitted to ACL ARR 2026 May
 - [2026.05] 🎉 Three papers accepted to ICML 2026
 - [2026.04] One paper accepted by ACL 2026 Findings
 - [2025.08] One paper accepted by TOG (Proceedings of SIGGRAPH Asia 2025)
@@ -35,27 +36,52 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
 
 <div class="pub-row">
   <div class="pub-left">
+    <img src="../images/overview_ibtpo.png" alt="IBTPO">
+  </div>
+  <div class="pub-right">
+    <strong>Long Live The Balance: Information Bottleneck Driven Tree-based Policy Optimization</strong><br />
+    <em style="font-size: 0.80em;"><strong>Jiang, H.</strong>, Li, S., Bu, T., Xu, B., Liu, X., Chen, Q., Duan, H., Hu, L., Yang, B., Zhang, M. </em><br />
+    <span style="font-size: 0.80em; color: #4C1C62;">ICML 2026 Main Conference</span><br />
+    <a href="https://arxiv.org/abs/2605.28109">Paper</a> | <a href="https://github.com/alibaba/EfficientRL">Code</a>
+  </div>
+</div>
+
+<div class="pub-row">
+  <div class="pub-left">
+    <img src="../images/overview_rots.png" alt="RoTS">
+  </div>
+  <div class="pub-right">
+    <strong>Recovering Policy-Induced Errors: Benchmarking and Trajectory Synthesis for Robust GUI Agents</strong><br />
+    <em style="font-size: 0.80em;">Bu, T., Liu, X., Chen, Q., <strong>Jiang, H.</strong>, Li, S., Duan, H, Jiang, L., Hu, L., Yang, B., Zhang, M.</em><br />
+    <span style="font-size: 0.80em; color: #4C1C62;">ICML 2026 Main Conference (spotlight)</span><br />
+    <a href="https://arxiv.org/abs/2605.29447">Paper</a> | <a href="https://github.com/AlibabaResearch/RoTS">Code</a>
+  </div>
+</div>
+
+<div class="pub-row">
+  <div class="pub-left">
+    <img src="../images/overview_dcore_2.png" alt="D-CORE">
+  </div>
+  <div class="pub-right">
+    <strong>D-CORE: Incentivizing Task Decomposition in Large Reasoning Models for Complex Tool Use</strong><br />
+    <em style="font-size: 0.80em;">Xu, B., Wu, S., <strong>Jiang, H.</strong>, Liu, K., Chen, X., Hu, L, Yang, B.</em><br />
+    <span style="font-size: 0.80em; color: #4C1C62;">ICML 2026 Main Conference</span><br />
+    <a href="https://arxiv.org/abs/2602.02160">Paper</a> | <a href="https://github.com/alibaba/EfficientAI">Code</a>
+  </div>
+</div>
+
+<div class="pub-row">
+  <div class="pub-left">
     <img src="../images/overview_memtr.png" alt="MemTR">
   </div>
   <div class="pub-right">
     <strong >MemTR: Enhancing Tool-Calling Reliability via Uncertainty-Triggered FFN-Space Retracing</strong><br />
     <em style="font-size: 0.80em;">Duan, H., Jiang, L., Zhang, M., Zhu, X., Bu, T., <strong>Jiang, H.</strong>, Wei, X., Hu, L.</em><br />
     <span style="font-size: 0.80em; color: #4C1C62;">ACL 2026 Findings</span><br />
-    <a href="https://rewindl.github.io/">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
+    <a href="https://openreview.net/forum?id=9tjbXN2YYg">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
   </div>
 </div>
 
-<div class="pub-row">
-  <div class="pub-left">
-    <img src="../images/overview_dcore_2.png" alt="MemTR">
-  </div>
-  <div class="pub-right">
-    <strong>D-CORE: Incentivizing Task Decomposition in Large Reasoning Models for Complex Tool Use</strong><br />
-    <em style="font-size: 0.80em;">Xu, B., Wu, S., <strong>Jiang, H.</strong>, Liu, K., Chen, X., Hu, L, Yang, B.</em><br />
-    <span style="font-size: 0.80em; color: #4C1C62;">Arxiv Preprint</span><br />
-    <a href="https://rewindl.github.io/">Paper</a> | <a href="https://rewindl.github.io/">Code</a>
-  </div>
-</div>
 
 <div class="pub-row">
   <div class="pub-left">
