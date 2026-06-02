@@ -52,7 +52,8 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   </div>
   <div class="pub-right">
     <strong>Recovering Policy-Induced Errors: Benchmarking and Trajectory Synthesis for Robust GUI Agents</strong><br />
-    <em style="font-size: 0.80em;">Bu, T., Liu, X., Chen, Q., <strong>Jiang, H.</strong>, Li, S., Duan, H, Jiang, L., Hu, L., Yang, B., Zhang, M.</em><br />
+    <em style="font-size: 0.80em;">Bu, T.<sup>#</sup>, Liu, X.<sup>#</sup>, Chen, Q.<sup>#</sup>, <strong>Jiang, H.</strong>, Li, S., Duan, H, Jiang, L., Hu, L., Yang, B., Zhang, M.</em><br />
+    <span style="font-size: 0.70em;"><sup>#</sup> Equal Contribution</span><br />
     <span style="font-size: 0.80em; color: #4C1C62;">ICML 2026 Main Conference (spotlight)</span><br />
     <a href="https://arxiv.org/abs/2605.29447">Paper</a> | <a href="https://github.com/AlibabaResearch/RoTS">Code</a>
   </div>
@@ -64,7 +65,8 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   </div>
   <div class="pub-right">
     <strong>D-CORE: Incentivizing Task Decomposition in Large Reasoning Models for Complex Tool Use</strong><br />
-    <em style="font-size: 0.80em;">Xu, B., Wu, S., <strong>Jiang, H.</strong>, Liu, K., Chen, X., Hu, L, Yang, B.</em><br />
+    <em style="font-size: 0.80em;">Xu, B.<sup>#</sup>, Wu, S.<sup>#</sup>, <strong>Jiang, H.</strong>, Liu, K., Chen, X., Hu, L, Yang, B.</em><br />
+    <span style="font-size: 0.70em;"><sup>#</sup> Equal Contribution</span><br />
     <span style="font-size: 0.80em; color: #4C1C62;">ICML 2026 Main Conference</span><br />
     <a href="https://arxiv.org/abs/2602.02160">Paper</a> | <a href="https://github.com/alibaba/EfficientAI">Code</a>
   </div>
@@ -114,9 +116,10 @@ I am currently an algorithm engineer at [Alibaba Cloud Intelligence](https://www
   </div>
   <div class="pub-right">
     <strong>Pyramid Texture Filtering</strong><br />
-    <em style="font-size: 0.80em;">Zhang, Q., <strong># Jiang, H.</strong>, Nie, Y., Zheng, W. (# First Student Author)</em><br />
+    <em style="font-size: 0.80em;">Zhang, Q., <strong>Jiang, H.<sup>♣</sup></strong>, Nie, Y., Zheng, W.</em><br />
     <span style="font-size: 0.80em; color: #4C1C62;">ACM Transactions on Graphics (Proceedings of SIGGRAPH 2023)</span><br />
     <!-- <span style="font-size: 0.80em; color: #4C1C62;">(Proceedings of SIGGRAPH 2023)</span><br /> -->
+    <span style="font-size: 0.70em;"><sup>♣</sup> First Student Author</span><br />
     <a href="https://dl.acm.org/doi/10.1145/3592120">Paper</a> | <a href="https://rewindl.github.io/pyramid_texture_filtering/">Project</a> | <a href="https://github.com/RewindL/pyramid_texture_filtering">Code</a>
   </div>
 </div>
