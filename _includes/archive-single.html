@@ -80,5 +80,13 @@
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
 
+    {% if post.codeurl or post.projecturl %}
+      <p class="archive__item-links">
+        {% if post.codeurl %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+        {% if post.codeurl and post.projecturl %} | {% endif %}
+        {% if post.projecturl %}<a href="{{ post.projecturl }}">Project Page</a>{% endif %}
+      </p>
+    {% endif %}
+
   </article>
 </div>

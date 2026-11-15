@@ -1,0 +1,101 @@
+<script>
+  /* Single-page anchor navigation: active-section highlighting + scroll reveal.
+     Progressive enhancement — the page is fully usable without this script. */
+  (function () {
+    var links = Array.prototype.slice.call(
+      document.querySelectorAll('.masthead__menu-item a[href*="#"]')
+    );
+    var map = {};
+    links.forEach(function (a) {
+      var hash = a.getAttribute('href').split('#')[1];
+      if (hash) { map[hash] = a; }
+    });
+
+    var sections = Object.keys(map)
+      .map(function (id) { return document.getElementById(id); })
+      .filter(Boolean);
+
+    function setActive(id) {
+      links.forEach(function (a) { a.parentElement.classList.remove('active'); });
+      if (map[id]) { map[id].parentElement.classList.add('active'); }
+    }
+
+    if (sections.length) {
+      var masthead = document.querySelector('.masthead');
+
+      function probeLine() {
+        var h = masthead ? masthead.getBoundingClientRect().height : 70;
+        return window.scrollY + h + 80;
+      }
+
+      /* The active section is the one whose top has passed just below the
+         fixed masthead. This stays correct regardless of section height. */
+      function currentSection() {
+        var line = probeLine();
+        var cur = sections[0].id;
+        for (var i = 0; i < sections.length; i++) {
+          var docTop = sections[i].getBoundingClientRect().top + window.scrollY;
+          if (docTop <= line) { cur = sections[i].id; }
+        }
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+          cur = sections[sections.length - 1].id;
+        }
+        return cur;
+      }
+
+      var ticking = false;
+      function onScroll() {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(function () {
+            setActive(currentSection());
+            ticking = false;
+          });
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll, { passive: true });
+
+      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      links.forEach(function (a) {
+        a.addEventListener('click', function (ev) {
+          var hash = a.getAttribute('href').split('#')[1];
+          var target = hash && document.getElementById(hash);
+          if (target) {
+            ev.preventDefault();
+            var h = masthead ? masthead.getBoundingClientRect().height : 70;
+            var y = target.getBoundingClientRect().top + window.scrollY - h - 24;
+            window.scrollTo({ top: Math.max(0, y), behavior: reduceMotion ? 'auto' : 'smooth' });
+            if (history.replaceState) { history.replaceState(null, '', '#' + hash); }
+            setActive(hash);
+          }
+        });
+      });
+
+      if (location.hash && map[location.hash.slice(1)]) {
+        setActive(location.hash.slice(1));
+      } else {
+        setActive(currentSection());
+      }
+    }
+
+    /* Staggered reveal of paper boxes as they enter the viewport. */
+    if ('IntersectionObserver' in window) {
+      var boxes = Array.prototype.slice.call(document.querySelectorAll('.paper-box'));
+      if (boxes.length) {
+        document.body.classList.add('js-reveal');
+        var reveal = new IntersectionObserver(function (entries, obs) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('revealed');
+              obs.unobserve(e.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        boxes.forEach(function (b) { reveal.observe(b); });
+      }
+    }
+  })();
+</script>

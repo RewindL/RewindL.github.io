@@ -1,0 +1,29 @@
+{% assign p = include.pub %}
+<article class="paper-box" id="pub-{{ p.title | slugify }}">
+  <div class="paper-box-main">
+    <div class="paper-box-image">
+      {% if p.badge %}<span class="paper-box-badge">{{ p.badge }}</span>{% endif %}
+      {% if p.teaser %}
+        <img src="images/{{ p.teaser }}" alt="{{ p.title | escape }}" loading="lazy" />
+      {% endif %}
+    </div>
+    <div class="paper-box-text">
+      <h3 class="paper-box-title">
+        {% if p.paperurl %}<a href="{{ p.paperurl }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+      </h3>
+      {% if p.authors %}<p class="paper-box-authors">{{ p.authors }}</p>{% endif %}
+      {% if p.authornote %}<p class="paper-box-note">{{ p.authornote }}</p>{% endif %}
+      <p class="paper-box-links">
+        {% if p.paperurl %}<a href="{{ p.paperurl }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Paper</a>{% endif %}
+        {% if p.codeurl %}<a href="{{ p.codeurl }}" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>{% endif %}
+        {% if p.projecturl %}<a href="{{ p.projecturl }}" target="_blank" rel="noopener"><i class="fa-solid fa-globe" aria-hidden="true"></i> Project</a>{% endif %}
+      </p>
+    </div>
+  </div>
+  {% if p.excerpt %}
+  <details class="paper-box-abstract">
+    <summary><i class="fa-solid fa-chevron-right chevron" aria-hidden="true"></i> Abstract</summary>
+    <div class="paper-box-abstract-body">{{ p.excerpt | markdownify }}</div>
+  </details>
+  {% endif %}
+</article>

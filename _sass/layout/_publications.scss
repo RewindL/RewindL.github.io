@@ -1,0 +1,380 @@
+/* ==========================================================================
+   SINGLE-PAGE HOME (anchor sections + publication paper-boxes)
+   ========================================================================== */
+
+/* Muted plum accent system: low-saturation purples derived from the site's
+   deep-purple brand, desaturated for a calm academic look. Titles use a
+   dark plum ink; expanded abstracts sit on a gray blockquote surface.
+   Light / dark values switch via the data-theme attribute. */
+:root {
+  --pub-accent:        #5f5175;
+  --pub-accent-bright: #8b7ea3;
+  --pub-accent-soft:   rgba(95, 81, 117, 0.10);
+  --pub-link-text:     #5c4d73;
+  --pub-title-color:   #3f3450;
+  --pub-shadow:        rgba(63, 52, 80, 0.12);
+  --pub-grad-a:        #453a54;
+  --pub-grad-b:        #7a6b91;
+  --pub-quote-bg:      #f3f2f5;
+  --pub-quote-border:  #b6abc8;
+}
+
+html[data-theme="dark"] {
+  --pub-accent:        #b1a3c7;
+  --pub-accent-bright: #a795c2;
+  --pub-accent-soft:   rgba(177, 163, 199, 0.16);
+  --pub-link-text:     #c3b6d8;
+  --pub-title-color:   #e4dcef;
+  --pub-shadow:        rgba(0, 0, 0, 0.45);
+  --pub-quote-bg:      #3d3b43;
+  --pub-quote-border:  #8b7ea3;
+}
+
+/* Smooth anchor scrolling, offset for the fixed masthead (70px) */
+html {
+  scroll-behavior: smooth;
+}
+
+.home-section {
+  scroll-margin-top: 90px;
+  margin-bottom: 2.25rem;
+}
+
+/* Section headings with a short gradient underline */
+.home-section > h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.home-section > h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 68px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--pub-grad-a), var(--pub-grad-b));
+}
+
+/* News list: gradient dot markers */
+#news ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#news li {
+  position: relative;
+  padding-left: 1.15rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+#news li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--pub-grad-a), var(--pub-grad-b));
+}
+
+.pub-legend {
+  margin: 0.25rem 0 1.1rem;
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+}
+
+/* --------------------------------------------------------------------------
+   Paper box
+   -------------------------------------------------------------------------- */
+.paper-box {
+  position: relative;
+  display: block;
+  padding: 1.1rem 1.1rem 1.1rem 1.25rem;
+  margin-bottom: 1.1rem;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.paper-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--pub-grad-a), var(--pub-grad-b));
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.paper-box:hover {
+  transform: translateY(-3px);
+  border-color: var(--pub-accent-bright);
+  box-shadow: 0 12px 30px var(--pub-shadow);
+}
+
+.paper-box:hover::before {
+  opacity: 1;
+}
+
+/* Top row: teaser image + title/authors/links side by side */
+.paper-box-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.paper-box-image {
+  flex: 0 0 240px;
+  max-width: 240px;
+}
+
+.paper-box-image img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--global-border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Venue label sits on its own line above the teaser image (not overlaid). */
+.paper-box-badge {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 0 0.5rem;
+  padding: 3px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+  color: #fff;
+  background: linear-gradient(135deg, var(--pub-grad-a), var(--pub-grad-b));
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(63, 52, 80, 0.35);
+}
+
+.paper-box-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.paper-box-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.06rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--pub-title-color);
+}
+
+.paper-box-title a {
+  color: var(--pub-title-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.paper-box-title a:hover {
+  color: var(--pub-link-text);
+}
+
+.paper-box-authors {
+  margin: 0 0 0.3rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--global-text-color-light);
+}
+
+.paper-box-authors strong {
+  color: var(--global-text-color);
+}
+
+.paper-box-note {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  color: var(--global-text-color-light);
+}
+
+.paper-box-links {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+}
+
+.paper-box-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0.4rem 0.35rem 0;
+  padding: 3px 12px;
+  font-weight: 600;
+  color: var(--pub-link-text);
+  text-decoration: none;
+  border: 1px solid var(--pub-accent-bright);
+  border-radius: 999px;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.paper-box-links a:hover {
+  color: #fff;
+  background: linear-gradient(135deg, var(--pub-grad-a), var(--pub-grad-b));
+  border-color: transparent;
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------------------------------
+   Collapsible abstract (native <details>, collapsed by default).
+   Sits below the image+text row and spans BOTH columns: its left edge
+   aligns with the teaser image, its right edge with the title column.
+   -------------------------------------------------------------------------- */
+.paper-box-abstract {
+  margin-top: 0.55rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--global-border-color);
+}
+
+.paper-box-abstract > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--pub-link-text);
+  user-select: none;
+}
+
+.paper-box-abstract > summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper-box-abstract > summary .chevron {
+  font-size: 0.7em;
+  transition: transform 0.25s ease;
+}
+
+.paper-box-abstract[open] > summary .chevron {
+  transform: rotate(90deg);
+}
+
+/* Markdown-blockquote look: gray surface + muted left bar */
+.paper-box-abstract-body {
+  margin-top: 0.55rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  text-align: justify;
+  color: var(--global-text-color);
+  background: var(--pub-quote-bg);
+  border-left: 3px solid var(--pub-quote-border);
+  border-radius: 0 8px 8px 0;
+}
+
+.paper-box-abstract-body p {
+  margin: 0;
+}
+
+.paper-box-abstract-body p + p {
+  margin-top: 0.6em;
+}
+
+.paper-box-abstract[open] .paper-box-abstract-body {
+  animation: pubAbstractIn 0.3s ease;
+}
+
+@keyframes pubAbstractIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------------------------------------------------------------------
+   Active anchor in the masthead (managed by single-page-nav.html)
+   -------------------------------------------------------------------------- */
+.masthead__menu-item.active a {
+  color: var(--global-text-color);
+  font-weight: 700;
+}
+
+.masthead__menu-item.active a:before {
+  background: linear-gradient(90deg, var(--pub-grad-a), var(--pub-grad-b));
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------
+   Scroll reveal (progressive enhancement: only hidden when JS opts in)
+   -------------------------------------------------------------------------- */
+body.js-reveal .paper-box {
+  opacity: 0;
+}
+
+body.js-reveal .paper-box.revealed {
+  opacity: 1;
+  animation: pubRise 0.55s ease;
+}
+
+@keyframes pubRise {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body.js-reveal .paper-box { opacity: 1; }
+  body.js-reveal .paper-box.revealed { animation: none; }
+  .paper-box-abstract[open] .paper-box-abstract-body { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive: stack image above text on narrow screens
+   -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  .paper-box-main {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+  .paper-box-image {
+    flex-basis: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Themed scrollbar
+   -------------------------------------------------------------------------- */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--pub-accent-bright) var(--global-border-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--global-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--pub-accent), var(--pub-accent-bright));
+  border-radius: 999px;
+  border: 2px solid var(--global-bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--pub-accent-bright), var(--pub-accent));
+}
